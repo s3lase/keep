@@ -1,7 +1,6 @@
----
 language: node_js
 node_js:
-  - "6"
+  - '8'
 
 sudo: false
 dist: trusty
@@ -11,11 +10,10 @@ addons:
 
 cache:
   directories:
-    - $HOME/.npm
+    - "$HOME/.npm"
 
 env:
   global:
-    # See https://git.io/vdao3 for details.
     - JOBS=1
 
 before_install:
@@ -25,3 +23,9 @@ script:
   - npm run lint:hbs
   - npm run lint:js
   - npm test
+
+deploy:
+  provider: heroku
+  app: getkeep
+  api_key:
+    secure: d/INlmyeuqqgcNgDnlH4hr3CHXS46vOoTDgniB3ygSk+OWooedpWYXMNI6i5o1JXSmVUthA0fsXU3AyPQwK9CfnZ0Ob57RyKEPkLB2dyIoJ8E77YCSm5BJWzbsDwbrgL0jR+P/N81Lok2/IjxFx0O87Gy2bUGIC3iA41vMdn3u0aiTPUk0WCrKzE162WffM4qnBiPvAstLFRjA20OGIy/QGEWHbZ4C51FdpoZSmblUgg+gvRJ/1hFnXKQafSA0aYlVElawfO26LU4sd4/KnBT2gMw/vDffI8bO1v+glTkYZWpDkd+kTNW+BL5k+9swbmsTCAe13pT+f25YBQhPI5b3a0hl2DwVi+FlNEf4D7QFWqgwsNmszKbpdIE/P9slvw2dDB812mrWyRHEbAHBiN21XKrmyf90iZA4q7QiOl5s454E0ca6hHr6oqpTJZvX0lTYP/E7Id3KhUIl3rxWkfLkBgj2ouCubzSQA+xNaThQLORBH7nOjYpb83MQDhOu7jccT2bltreDVvrZQYCwFGXEBBeNDEjev1Es61Q5tFPZosGpQvN9idhFFjZdOf8nzFR9jNDLNjkk4haIs7ucIx4E4D65LyQOuj2v+hKxcZzO/TpOvnhz+VHvym4IDwyGY4UjfrSVBV+ueYyoOcoPX+NlRT5TI9qQxI9OrIYZzOan0=
