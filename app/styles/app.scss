@@ -4,13 +4,25 @@ $primary-blue: #2987CD;
 $input-border: #E0E1E2;
 $input-background: F8F9FA;
 $placeholder-color: rgba(73, 80, 87, 0.6);
+@font-face {
+    font-family: "Source Sans Pro";
+    src:url("/assets/fonts/SourceSansPro-Regular.ttf");
+  }
+
+.m-t-20{
+    margin-top: 20px;
+}
+
+.m-b-20{
+    margin-bottom: 20px;
+}
 
 *{
     margin: 0;
     padding: 0;
 }
 .container{
-    font-family: Helvetica, sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     position: relative;
     height: 100vh;
     background-color: $background-primary;
@@ -69,4 +81,18 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 }
 .login-right{
     background-color: #FFFF;
+}
+
+.login-right{
+    // position: absolute;
+    // align-items: center;
+    // align-self: center;
+    // align-content: center;
+    top: 60px;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+label{
+    margin: 10px 0;
 }
