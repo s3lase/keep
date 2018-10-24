@@ -36,10 +36,10 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 
 .row{
     position: absolute;
-    top: 10%;
-    bottom: 10%;
-    width: 70%;
-    left:15%;
+    top: 13%;
+    bottom: 13%;
+    width: 60%;
+    left:20%;
     background-color: #FFFF;
     display: grid;
     grid-template-columns: 1fr 1.5fr
@@ -87,9 +87,9 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 }
 
 .login-right{
-    top: 60px;
+    top: 10px;
     margin-left: 15%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .sign-in{
     font-size: 13px;
