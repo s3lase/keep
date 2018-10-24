@@ -5,12 +5,17 @@
     </div>
     <div class="login-right">
       <h2 class="creat-account">Let's create your account</h2>
-      <p>Already have an account? <a href="#" class="login">Login</a></p>
+      <p class="sign-in">Already have an account? <a href="#" class="login">Login</a></p>
       <div class="login-form">
 
         <div class="m-t-20 m-b-20">
           <label for="name">Name</label><br>
-          <input type="text" name="name" class="input-name" placeholder="Jared Dunn">
+          <input
+            type="text"
+            name="name"
+            class="input-field"
+            placeholder="Jared Dunn"
+          >
         </div>
 
         <div class="m-b-20">
@@ -18,20 +23,24 @@
           <input
             type="text"
             name="email"
-            class="input-email"
+            class="input-field"
             placeholder="jared@piedpiper.com"
           >
         </div>
 
         <div class="m-b-20">
           <label for="password">Password</label><br>
-          <input type="password" class="input-password" placeholder="Password">
+          <input type="password" class="input-field" placeholder="Password">
         </div>
-
-        <p class="terms-and-conditions">
-          <input type="checkbox" name="t&c's" class="terms" checked="true">
-          I agree to Keep's Terms and Privacy Policy
-        </p>
+        <div class="terms-and-conditions">
+          <input
+            type="checkbox"
+            value="1"
+            name=""
+          >
+          <label for="checkbox-input"></label>
+          <p class="terms">I agree to Keep's Terms and Privacy Policy</p>
+        </div><br>
         <button class="create-account">Create Account</button>
       </div>
     </div>

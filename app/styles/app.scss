@@ -1,8 +1,10 @@
 $background-primary: #F1F6F8;
 $image-overlay: rgba(33, 37, 42, 0.7);
 $primary-blue: #2987CD;
+$secondary-blue: #89c6f5;
+$darker-blue: #246ca3;
 $input-border: #E0E1E2;
-$input-background: F8F9FA;
+$input-background: #F8F9FA;
 $placeholder-color: rgba(73, 80, 87, 0.6);
 @font-face {
     font-family: "Source Sans Pro";
@@ -20,6 +22,7 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 *{
     margin: 0;
     padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
 }
 .container{
     font-family: "Source Sans Pro", sans-serif;
@@ -33,10 +36,10 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 
 .row{
     position: absolute;
-    top: 15%;
-    bottom: 15%;
-    width: 60%;
-    left:20%;
+    top: 10%;
+    bottom: 10%;
+    width: 70%;
+    left:15%;
     background-color: #FFFF;
     display: grid;
     grid-template-columns: 1fr 1.5fr
@@ -84,15 +87,95 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 }
 
 .login-right{
-    // position: absolute;
-    // align-items: center;
-    // align-self: center;
-    // align-content: center;
     top: 60px;
     margin-left: 15%;
     margin-top: 15%;
 }
+.sign-in{
+    font-size: 13px;
+}
 
-label{
-    margin: 10px 0;
+
+div>p>a{
+    text-decoration: none;
+    color: $primary-blue;
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+.terms-and-conditions{
+    // display: inline;
+    margin: 1px 1px;
+    position: relative;
+}
+
+.terms{
+    display:inline;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.terms-and-conditions>label {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    top: 3px;
+    border-radius: 4px;
+    left: 0;
+    background: $primary-blue;
+    border:1px solid #ddd;
+}
+.terms-and-conditions>label:after {
+    // opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    background: transparent;
+    top: 2px;
+    left: 2px;
+    border: 3px solid #FFFF;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+}
+
+// Create the hover event of the tick
+ .terms-and-conditions>label:hover::after {
+    opacity: 0.5;
+}
+
+
+//Create the checkbox state for the tick
+.terms-and-conditions>input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+.input-field{
+    height: 30px;
+    width: 350px;
+    margin-top: 10px;
+    border: 1px solid $input-border;
+    border-radius: 2px;
+    padding: 1px 15px;
+    background-color: $input-background;
+
+}
+.create-account{
+    margin-left: 2px;
+    height: 30px;
+    width: 380px;
+    color: $input-background;
+    font-weight: 700;
+    border: 1px $secondary-blue;
+    border-radius: 2px;
+    background-color: $primary-blue;
+}
+
+.create-account:hover{
+    transition: all .5s ease-in;
+    background-color: $darker-blue;
 }
