@@ -40,7 +40,7 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
     bottom: 13%;
     width: 60%;
     left:20%;
-    height: 78%;
+    height: 72%;
     background-color: #FFFF;
     display: grid;
     grid-template-columns: 1fr 1.5fr
@@ -193,6 +193,36 @@ input[type=checkbox] {
 }
 @media  (min-width : 320px) and (max-width : 768px)
 {
+    .row{
+        position: absolute;
+        top: 15%;
+        bottom: 13%;
+        width: 100%;
+        left:0%;
+        height: 72%;
+        background-color: #FFFF;
+        display: grid;
+        grid-template-columns: 2fr;
 
+    }
 
+    .row>.login-left{
+        display:none;
+    }
+
+    .login-right{
+        background-color: #FFFF;
+    }
+
+    .login-right{
+        top: 10px;
+        margin-left: 5%;
+        margin-top: 20%;
+    }
+    .input-field{
+        width: 300px;
+    }
+    .create-account{
+        width: 330px;
+    }
 }
