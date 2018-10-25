@@ -1,0 +1,31 @@
+{{#auth-wrapper}}
+  <h2 class="creat-account">Let's create your account</h2>
+  <p class="sign-in">Already have an account? <a href="#" class="login">Login</a></p>
+  <div class="login-form">
+    <div class="m-t-20 m-b-20">
+      <label for="name">Name</label><br>
+      {{input name="name" type="text" class="input-field" placeholder="Jared Dunn"}}
+    </div>
+    <div class="m-b-20">
+      <label for="email">Email</label><br>
+      {{input
+        name="email"
+        type="email"
+        class="input-field"
+        placeholder="jared@piedpiper.com"
+      }}
+    </div>
+    <div class="m-b-20">
+      <label for="password">Password</label><br>
+      {{input type="password" class="input-field" placeholder="Password"}}
+    </div>
+    <div class="terms-and-conditions">
+      {{input type="checkbox" name=""}}
+      <label for="checkbox-input"></label>
+      <p class="terms">I agree to Keep's Terms and Privacy Policy</p>
+    </div><br>
+
+    <button class="create-account">Create Account</button>
+  </div>
+{{/auth-wrapper}}
+
