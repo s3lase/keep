@@ -40,7 +40,7 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
     bottom: 13%;
     width: 60%;
     left:20%;
-    height: 72%;
+    height: 75%;
     background-color: #FFFF;
     display: grid;
     grid-template-columns: 1fr 1.5fr
@@ -191,6 +191,8 @@ input[type=checkbox] {
     transition: all .5s ease-in;
     background-color: $darker-blue;
 }
+
+
 @media  (min-width : 320px) and (max-width : 768px)
 {
     .row{
