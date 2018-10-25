@@ -222,6 +222,9 @@ input[type=checkbox] {
     .input-field{
         width: 300px;
     }
+    .input-field:focus{
+        width: 300px;
+    }
     .create-account{
         width: 330px;
     }
