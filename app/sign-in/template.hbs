@@ -15,7 +15,10 @@
       <label for="password">Password</label><br>
       {{input type="password" class="input-field" placeholder="Password"}}
     </div>
-    <p class="sign-in m-b-20">Forgot password? {{#link-to "reset-password" class="login"}}I forgot my password{{/link-to}}</p>
+    <p class="sign-in m-b-20">
+      {{#link-to "sign-up" class="login"}}Create new account |{{/link-to}}
+      {{#link-to "reset-password" class="login"}}I forgot my password{{/link-to}}
+    </p>
     <button class="create-account">Log In</button>
   </div>
 {{/auth-wrapper}}
