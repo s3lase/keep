@@ -1,13 +1,13 @@
 {{#auth-wrapper}}
   <h2 class="creat-account">Let's create your account</h2>
   <p class="sign-in">Already have an account? {{#link-to "sign-in" class="login"}}Login{{/link-to}}</p>
-  <div class="login-form">
+  <form class="login-form">
     <div class="m-t-20 m-b-20">
-      <label for="name">Name</label><br>
+      <label for="name">Name</label>
       {{input name="name" type="text" class="input-field" placeholder="Jared Dunn"}}
     </div>
     <div class="m-b-20">
-      <label for="email">Email</label><br>
+      <label for="email">Email</label>
       {{input
         name="email"
         type="email"
@@ -16,16 +16,15 @@
       }}
     </div>
     <div class="m-b-20">
-      <label for="password">Password</label><br>
+      <label for="password">Password</label>
       {{input type="password" class="input-field" placeholder="Password"}}
     </div>
     <div class="terms-and-conditions">
       {{input type="checkbox" name=""}}
       <label for="checkbox-input"></label>
       <p class="terms">I agree to Keep's Terms and Privacy Policy</p>
-    </div><br>
-
+    </div>
     <button class="create-account">Create Account</button>
-  </div>
+  </form>
 {{/auth-wrapper}}
 

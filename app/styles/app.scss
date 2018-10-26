@@ -97,7 +97,12 @@ $placeholder-color: rgba(73, 80, 87, 0.6);
 }
 
 
-div>p>a{
+form>p>a{
+    text-decoration: none;
+    color: $primary-blue;
+}
+
+a{
     text-decoration: none;
     color: $primary-blue;
 }
@@ -106,8 +111,9 @@ input[type=checkbox] {
     visibility: hidden;
 }
 .terms-and-conditions{
-    // display: inline;
-    margin: 1px 1px;
+    display: block;
+    margin: 0 1px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -116,7 +122,9 @@ input[type=checkbox] {
     margin-left: 5px;
     font-size: 14px;
 }
-
+label{
+    display:block;
+}
 .terms-and-conditions>label {
     cursor: pointer;
     position: absolute;
@@ -171,9 +179,8 @@ input[type=checkbox] {
     width: 350px;
     margin-top: 10px;
     border: 1px solid $secondary-blue;
-    border-radius: 2px;
-    padding: 1px 15px;
-    background-color: $input-background;
+    transition: all .2s ease-out;
+    box-shadow: inset 1px 1px .2px .2px rgba(36, 108, 163, 0.15);
 
 }
 .create-account{
@@ -192,7 +199,28 @@ input[type=checkbox] {
     background-color: $darker-blue;
 }
 
+.forgot-password-link{
+    display: block;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 256px;
+    font-size: 14px;
+}
 
+.forgot-password-label{
+    margin: 0;
+    padding: 0;
+}
+.sign-in--wrapper{
+    margin-top: 15%;
+    margin-left: -4%;
+
+}
+.reset-password--wrapper{
+    margin-top: 20%;
+    margin-left: -4%;
+
+}
 @media  (min-width : 320px) and (max-width : 768px)
 {
     .row{
