@@ -111,8 +111,9 @@ input[type=checkbox] {
     visibility: hidden;
 }
 .terms-and-conditions{
-    // display: inline;
-    margin: 1px 1px;
+    display: block;
+    margin: 0 1px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -121,7 +122,9 @@ input[type=checkbox] {
     margin-left: 5px;
     font-size: 14px;
 }
-
+label{
+    display:block;
+}
 .terms-and-conditions>label {
     cursor: pointer;
     position: absolute;
@@ -197,8 +200,16 @@ input[type=checkbox] {
 }
 
 .forgot-password-link{
-    margin-left: 190px;
+    display: block;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 256px;
     font-size: 14px;
+}
+
+.forgot-password-label{
+    margin: 0;
+    padding: 0;
 }
 .sign-in--wrapper{
     margin-top: 15%;

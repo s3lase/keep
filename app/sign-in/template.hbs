@@ -4,7 +4,7 @@
     <p class="sign-in">New to Keep? {{#link-to "sign-up" class="login"}}Sign Up{{/link-to}}</p>
     <form class="login-form">
       <div class="m-b-20 m-t-20">
-        <label for="email">Email</label><br>
+        <label for="email">Email</label>
         {{input
           name="email"
           type="email"
@@ -13,9 +13,9 @@
         }}
       </div>
       <div class="m-b-20">
-        <label for="password">Password</label>
-        {{#link-to "reset-password" class="login forgot-password-link"}}I forgot my password{{/link-to}}
+        <label for="password password-label">Password</label>
         {{input type="password" class="input-field" placeholder="Password"}}
+        {{#link-to "reset-password" class="login forgot-password-link"}}I forgot my password{{/link-to}}
       </div>
       <p class="sign-in m-b-20">
       </p>
