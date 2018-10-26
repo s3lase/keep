@@ -1,11 +1,2 @@
-# keep
 
-#todo
-
-1. Sign in
-
-2. Password
-
-3. configure readme
-
-4. Add build status
+[![Build Status](https://travis-ci.org/quajo/keep.svg?branch=master)](https://travis-ci.org/quajo/keep)
