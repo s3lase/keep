@@ -1,0 +1,24 @@
+{{#auth-wrapper}}
+  <h2 class="creat-account">Let's log you into your account.</h2>
+  <p class="sign-in">Sign in to access your account.</p>
+  <div class="login-form">
+    <div class="m-b-20 m-t-20">
+      <label for="email">Email</label><br>
+      {{input
+        name="email"
+        type="email"
+        class="input-field"
+        placeholder="jared@piedpiper.com"
+      }}
+    </div>
+    <div class="m-b-20">
+      <label for="password">Password</label><br>
+      {{input type="password" class="input-field" placeholder="Password"}}
+    </div>
+    <p class="sign-in m-b-20">
+      {{#link-to "sign-up" class="login"}}Create new account |{{/link-to}}
+      {{#link-to "reset-password" class="login"}}I forgot my password{{/link-to}}
+    </p>
+    <button class="create-account">Log In</button>
+  </div>
+{{/auth-wrapper}}
