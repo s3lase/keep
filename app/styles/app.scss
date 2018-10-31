@@ -221,6 +221,7 @@ label{
     margin-left: -4%;
 
 }
+
 @media  (min-width : 320px) and (max-width : 768px)
 {
     .row{
@@ -246,7 +247,7 @@ label{
 
     .login-right{
         top: 10px;
-        margin-left: 10%;
+        margin-left: 15%;
         margin-top: 15%;
     }
     .input-field{
@@ -258,4 +259,59 @@ label{
     .create-account{
         width: 330px;
     }
+
+    .forgot-password-link{
+        display: block;
+        position: absolute;
+        margin-top: -65px;
+        margin-left: 235px;
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width :768px) and (max-width : 768px){
+    .row{
+        position: absolute;
+        top: 15%;
+        bottom: 13%;
+        width: 100%;
+        left:0%;
+        height: 72%;
+        background-color: #FFFF;
+        display: grid;
+        grid-template-columns: 2fr;
+
+    }
+
+    .row>.login-left{
+        display:none;
+    }
+
+    .login-right{
+        background-color: #FFFF;
+    }
+
+    .login-right{
+        top: 10px;
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+    .input-field{
+        width: 450px;
+    }
+    .input-field:focus{
+        width: 300px;
+    }
+    .create-account{
+        width: 478px;
+    }
+    .forgot-password-link{
+        display: block;
+        position: absolute;
+        margin-top: -65px;
+        margin-left: 380px;
+        font-size: 14px;
+    }
+
 }
